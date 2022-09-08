@@ -1,0 +1,10 @@
+extends layout
+include mixins/video
+
+block content 
+    h2 Welcome to Youtube
+    each video in videos 
+        +paintVideo(video)
+    else 
+        span Nothing Found
+            
